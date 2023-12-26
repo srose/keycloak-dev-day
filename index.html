@@ -77,7 +77,7 @@
 		<div class="container">
 			<div class="hero-text-block">
 				<h1 class="hero-heading mb-2">Keycloak DevDay 2024</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>22 Feb <i class="fas fa-map-marker-alt mx-2"></i>Frankfurt, Germany <i class="fas fa-clock mx-2"></i>9am - 6pm</div>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>22 Feb <i class="fas fa-map-marker-alt mx-2"></i>Frankfurt, Germany <i class="fas fa-clock mx-2"></i>9am - 5pm</div>
 				<div class="hero-intro mb-4">The Community Class Reunion for <br>Keycloak Developers</div>
 				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Get Tickets</a></div>
 				
@@ -297,158 +297,228 @@
 			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
 				<li class="nav-item me-2">
 					<a class="nav-link active" id="tab-1" data-bs-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
-						<span class="heading">Day 1</span>
-						<span class="meta">(Thu 22, Feb)</span>
+						<span class="heading">Thu 22, Feb</span>
+						<span class="meta d-none">Day 1</span>
 					</a>
 				</li>
 			</ul>
 			
 			<!-- Tab panes -->
 			<div class="schedule-tab-content tab-content">
-				<div class="tab-pane active w-100 text-center" id="tab-1-content">
-					t.b.a.
-				</div>
-				<div class="tab-pane active d-none" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
+				<div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">9:00 - 9:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-1.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">James Doe</a></div>
-							</div><!--//profile-->
+							<h4 class="time mb-3">8:00 - 9:00</h4>
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Best Practices And Tips For A Clean Angular Application</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">Breakfast Reception</h3>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
+							<div class="desc">
+								Enjoy your arrival and have some coffee ☕️ and a small breakfast 🥐 if you like.
+								Get ready to start into a <i>Keycloakified</i> day!
+							</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">9:30 - 10:00</h4>
+							<h4 class="time mb-3">9:00 - 9:15</h4>
+						</div><!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">Welcome &amp; Opening Note</h3>
+							<div class="profile mb-3">
+								<div class="name">Niko Köbler, Sebastian Rose</div>
+							</div><!--//profile-->
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-talk">
+						<div class="meta">
+							<h4 class="time mb-3">9:15 - 10:00</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-2.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Sarah Doe</a></div>
+								<div class="name">Keynote</div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Developer Productivity</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">What s next in Keycloak, the Open Source Identity and Access Management solution</h3>
+							<div class="profile mb-3">
+								<div class="name"><a class="theme-link" href="#modal-speaker-aschw" data-bs-toggle="modal" data-bs-target="#modal-speaker-aschw">Alexander Schwartz</a></div>
+							</div><!--//profile-->
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
+							<div class="desc">
+								Adding authentication and authorization to your application landscape is the key to automate yourprocesses and enable new business capabilities. All of this requires APIs and services for administration and automation which only an Identity and Access Management solution can provide.
+								<br/>
+								More than 10 years ago the Keycloak maintainers committed the first code to their repository. In the following years Keycloak built a growing community by offering a flexible Open Source IAM. You can use it both out of the box or extend it to fit your organization’s needs.
+								<br/>
+								After presenting some of the highlights of the latest Keycloak release, this talk focuses on the advancements in OpenID Connect, as well as Keycloak’s pursuit for scalability, high availability and customizability via declarative user profiles.
+							</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-talk">
+						<div class="meta">
+							<h4 class="time mb-3">10:15 - 11:00</h4>
+							<div class="profile">
+								<div class="name">Talks</div>
+							</div><!--//profile-->
+						</div><!--//meta-->
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">OPA Integration in Keycloak</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-tdar" data-bs-toggle="modal" data-bs-target="#modal-speaker-tdar">Thomas Darimont</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="desc">
+										<em>t.b.a.</em>
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Unlocking the Power of Keycloak: Best Practices for Extension Development</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-stj" data-bs-toggle="modal" data-bs-target="#modal-speaker-stj">Sven-Torben Janus</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="desc">
+										Keycloak ist eine leistungsstarke Open-Source-Identitäts- und Zugriffsverwaltungslösung, die bereits eine breite Palette von Funktionen bietet.
+										Für viele Organisationen ist es jedoch unerlässlich, Keycloak anzupassen und zu erweitern, um ihre individuellen Authentifizierungs- und Autorisierungsanforderungen zu erfüllen.
+										In dieser Präsentation werde ich meine Erfahrungen bei der Entwicklung und Pflege von zwei beliebten Keycloak-Erweiterungen teilen: <i>Home IdP Discovery</i> und <i>Keycloak Restrict Client Auth.</i>
+										Wir werden Best Practices für die Entwicklung von Keycloak-Erweiterungen diskutieren.
+										Außerdem werden wir unsere Tipps für das Testen, Debuggen und Bereitstellen von Keycloak-Erweiterungen teilen.
+										Egal, ob du neu in Keycloak bist oder ein erfahrener Entwickler, diese Präsentation bietet wertvolle Einblicke, wie man durch effektive Entwicklungen von Erweiterungen die Power von Keycloak freisetzen kann.
+									</div>
+								</div>
+							</div>
+						</div><!--//content-->
+					</div><!--//item-->
+					<div class="item item-talk">
+						<div class="meta">
+							<h4 class="time mb-3">11:15 - 11:45</h4>
+							<div class="profile">
+								<div class="name">Talks</div>
+							</div><!--//profile-->
+						</div><!--//meta-->
+						<div class="content">
+							<div class="row">
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Keycloak Extension Develpment with Testcontainers</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko">Niko Köbler</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="desc">
+										<em>t.b.a.</em>
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Zero Exploits Build</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-sro" data-bs-toggle="modal" data-bs-target="#modal-speaker-sro">Sebastian Rose</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="desc">
+										<em>t.b.a.</em>
+									</div>
+								</div>
+							</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-other">
 						<div class="meta">
-							<h4 class="time mb-3">10:00 - 10:30</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Coffee Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room A5</div>
-							<div class="desc">Coffee and cakes lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">10:30 - 11:00</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-3.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Tim Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Progressive Web Apps with React.js</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room A</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">11:00 - 12:00</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-4.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Josh Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room B</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-other">
-						<div class="meta">
-							<h4 class="time mb-3">12:00 - 13:30</h4>
+							<h4 class="time mb-3">11:45 - 13:00</h4>
 						</div><!--//meta-->
 						<div class="content">
 							<h3 class="title mb-3">Lunch Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room B6</div>
-							<div class="desc">Buffet lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
+							<div class="desc">Let's have some delicious food together.</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">13:30 - 14:30</h4>
+							<h4 class="time mb-3">13:00 - 13:45</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-5.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Ling Doe</a></div>
+								<div class="name">Talks</div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<div class="row">
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">T.B.A</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba">Robert Bauer</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="desc">
+										<em>t.b.a.</em>
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Multi-Tenancy with Keycloak</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-grp" data-bs-toggle="modal" data-bs-target="#modal-speaker-grp">GR Patil</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="desc">
+										Keycloak is a mature Identity and Access Management (IAM) system that is highly extensible.
+										The authors had the foresight to build Keycloak as a set of core Service Provider Interfaces (SPIs) that could allow most portions of the server to be extended or replaced.
+										This enables Keycloak to focus on the core authentication and authorization protocol layers, while allowing developers to easily add and change functionality according to their requirements.
+										<br/>
+										This talk presents <i>keycloak-orgs</i>, which extends the core Keycloak server with entities that model Organizations (tenants), and their related Members, Roles and Identity Providers.
+										It is also an exemplary set of Keycloak extensions, which we will use in this talk to facilitate developers understanding of how to use the plugin architecture of Keycloak to solve problems not addressed by its core functionality.
+										<br/>
+										We will demonstrate the creation and use of custom Authenticators, protocol mappers, REST resources, JPA entities, model providers, and others to show how it is possible to create integrated functionality with many aspects of the Keycloak core.
+										In this, we present one solution to the common use case of multi-tenancy.
+									</div>
+								</div>
+							</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-talk">
 						<div class="meta">
-							<h4 class="time mb-3">14:30 - 15:30</h4>
+							<h4 class="time mb-3">14:00 - 16:45</h4>
 							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-6.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Andy Doe</a></div>
+								<div class="name">Participant Driven</div>
 							</div><!--//profile-->
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">15:30 - 16:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-7.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Alice Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">16:30 - 17:30</h4>
-							<div class="profile">
-								<a href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1"><img class="profile-image rounded-circle  mb-2" src="assets/images/speakers/speaker-8.jpg" alt=""></a>
-								<div class="name"><a class="theme-link" href="#modal-speaker-1" data-bs-toggle="modal" data-bs-target="#modal-speaker-1">Thomas Doe</a></div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room C</div>
-							<div class="desc">Talk's summary goes here. <strong>You can hook up the speaker profile image/name on the left with his or her bio modal window</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<div class="row">
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Unconference / Bring Your Own Topics</h3>
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="desc">
+										<b>Bring our own topics to discuss with and present to the other participants.</b>
+										<br/><br/>
+										In a classic Unconference format, you will decide upon the content first, then build a quick schedule and finally present/discuss your topics.
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Discussions &amp; Workshops</h3>
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="desc">
+										<b>Discussion:</b>
+										Meet the Maintainers of Keycloak
+										<br/><br/>
+										<b>Workshop</b>
+										Contrib Fest / Become a Contributor to the Keycloak project
+									</div>
+								</div>
+							</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					<div class="item item-other">
 						<div class="meta">
-							<h4 class="time mb-3">18:00 - 24:00</h4>
+							<h4 class="time mb-3">16:45 - 17:00 / Open End</h4>
 						</div><!--//meta-->
 						<div class="content">
-							<h3 class="title mb-3">Dinner &amp; After-party</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Bar Lorem Ipsum</div>
-							<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+							<h3 class="title mb-3">Closing Note, Feedback, Pizza 🍕 &amp; Beer 🍻</h3>
+							<div class="profile mb-3">
+								<div class="name">Niko Köbler, Sebastian Rose</div>
+							</div><!--//profile-->
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
+							<div class="desc">
+								We want to thank YOU 🙏 for being part of the first German Keycloak DevDay and asking for your feedback.
+								<br/>
+								Afterwards, we'll enjoy the end of the day with some Pizza &amp; Beer, with chats, further discussions, etc.
+							</div>
 						</div><!--//content-->
 					</div><!--//item-->
 					
@@ -574,7 +644,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-aschw-ModalLabel" class="modal-title sr-only">Alexander Schwarz</h4>
+					<h4 id="speaker-aschw-ModalLabel" class="modal-title sr-only">Alexander Schwartz</h4>
 				</div>
 				<div class="modal-body p-0">
 					<div class="theme-bg-light p-5">
