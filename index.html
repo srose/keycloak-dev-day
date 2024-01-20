@@ -325,7 +325,7 @@
 						<div class="content">
 							<h3 class="title mb-3">Welcome &amp; Opening Note</h3>
 							<div class="profile mb-3">
-								<div class="name">Niko Köbler, Sophie Tauchert</div>
+								<div class="name">Niko Köbler, Sebastian Rose</div>
 							</div><!--//profile-->
 							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
 						</div><!--//content-->
@@ -380,7 +380,7 @@
 									<div class="profile mb-3">
 										<div class="name"><a class="theme-link" href="#modal-speaker-stj" data-bs-toggle="modal" data-bs-target="#modal-speaker-stj">Sven-Torben Janus</a></div>
 									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
 									<div class="desc">
 										Keycloak ist eine leistungsstarke Open-Source-Identitäts- und Zugriffsverwaltungslösung, die bereits eine breite Palette von Funktionen bietet.
 										Für viele Organisationen ist es jedoch unerlässlich, Keycloak anzupassen und zu erweitern, um ihre individuellen Authentifizierungs- und Autorisierungsanforderungen zu erfüllen.
@@ -403,28 +403,28 @@
 						<div class="content">
 							<div class="row">
 								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Keycloak Extension Develpment with Testcontainers</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko">Niko Köbler</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
-									<div class="desc">
-										<em>t.b.a.</em>
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
 									<h3 class="title mb-3">Automating Keycloak configuration for compliance and agile development</h3>
 									<div class="profile mb-3">
 										<div class="name"><a class="theme-link" href="#modal-speaker-sta" data-bs-toggle="modal" data-bs-target="#modal-speaker-sta">Sophie Tauchert</a></div>
 									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
+									<div class="desc">
+										Configuring identity access management in a heavily microservice-based environment with multiple
+										software development teams can be challenging. Once the configuration grows, it is difficult to keep
+										it consistent and secure when changing it manually.
+										Using the Keycloak admin API allows us to largely automate compliance checks, configuration updates
+										and deployments between staging and production environments. The new OpenAPI spec has been very
+										helpful in developing those automations in Rust, which I present in this talk.
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Keycloak Extension Develpment with Testcontainers</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko">Niko Köbler</a></div>
+									</div><!--//profile-->
 									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
 									<div class="desc">
-										<em>Configuring identity access management in a heavily microservice-based environment with multiple
-											software development teams can be challenging. Once the configuration grows, it is difficult to keep
-											it consistent and secure when changing it manually.
-											Using the Keycloak admin API allows us to largely automate compliance checks, configuration updates
-											and deployments between staging and production environments. The new OpenAPI spec has been very
-											helpful in developing those automations in Rust, which I present in this talk.</em>
+										<em>t.b.a.</em>
 									</div>
 								</div>
 							</div>
@@ -450,24 +450,11 @@
 						<div class="content">
 							<div class="row">
 								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Keycloak durch die Identity Management Brille betrachtet</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba">Robert Bauer</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
-									<div class="desc">
-										Keycloak kann weit mehr als Authentisierung, das ist klar.
-										Auf der Webseite verspricht Keycloak, ein "Open Source Identity and Access Management" zu sein.
-										Und Identity Management ist heute ein kritischer Aspekt jeder Unternehmung, egal ob durch die IT-Security oder die Datenschutz-Brille betrachtet.
-										Deshalb wollen wir uns in diesem Talk verschiedene IAM-Szenarien anschauen, um zu verstehen, inwieweit Keycloak die Erwartungen erfüllt, oder ob es Bereiche gibt, die Nachhilfe benötigen, um den heutigen Anforderungen an IAM-Systeme gerecht zu werden.
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
 									<h3 class="title mb-3">Multi-Tenancy with Keycloak</h3>
 									<div class="profile mb-3">
 										<div class="name"><a class="theme-link" href="#modal-speaker-grp" data-bs-toggle="modal" data-bs-target="#modal-speaker-grp">GR Patil</a></div>
 									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
 									<div class="desc">
 										Keycloak is a mature Identity and Access Management (IAM) system that is highly extensible.
 										The authors had the foresight to build Keycloak as a set of core Service Provider Interfaces (SPIs) that could allow most portions of the server to be extended or replaced.
@@ -478,6 +465,19 @@
 										<br/>
 										We will demonstrate the creation and use of custom Authenticators, protocol mappers, REST resources, JPA entities, model providers, and others to show how it is possible to create integrated functionality with many aspects of the Keycloak core.
 										In this, we present one solution to the common use case of multi-tenancy.
+									</div>
+								</div>
+								<div class="col-xs-12 col-lg-6">
+									<h3 class="title mb-3">Keycloak durch die Identity Management Brille betrachtet</h3>
+									<div class="profile mb-3">
+										<div class="name"><a class="theme-link" href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba">Robert Bauer</a></div>
+									</div><!--//profile-->
+									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
+									<div class="desc">
+										Keycloak kann weit mehr als Authentisierung, das ist klar.
+										Auf der Webseite verspricht Keycloak, ein "Open Source Identity and Access Management" zu sein.
+										Und Identity Management ist heute ein kritischer Aspekt jeder Unternehmung, egal ob durch die IT-Security oder die Datenschutz-Brille betrachtet.
+										Deshalb wollen wir uns in diesem Talk verschiedene IAM-Szenarien anschauen, um zu verstehen, inwieweit Keycloak die Erwartungen erfüllt, oder ob es Bereiche gibt, die Nachhilfe benötigen, um den heutigen Anforderungen an IAM-Systeme gerecht zu werden.
 									</div>
 								</div>
 							</div>
@@ -508,7 +508,7 @@
 										<b>Discussion:</b>
 										Meet the Maintainers of Keycloak
 										<br/><br/>
-										<b>Workshop</b>
+										<b>Workshop:</b>
 										Contrib Fest / Become a Contributor to the Keycloak project
 									</div>
 								</div>
@@ -522,7 +522,7 @@
 						<div class="content">
 							<h3 class="title mb-3">Closing Note, Feedback, Pizza 🍕 &amp; Drinks</h3>
 							<div class="profile mb-3">
-								<div class="name">Niko Köbler, Sophie Tauchert</div>
+								<div class="name">Niko Köbler, Sebastian Rose</div>
 							</div><!--//profile-->
 							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
 							<div class="desc">
