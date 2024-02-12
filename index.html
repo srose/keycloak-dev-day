@@ -424,7 +424,12 @@
 									</div><!--//profile-->
 									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
 									<div class="desc">
-										<em>t.b.a.</em>
+										Testing of Keycloak Extensions can be cumbersome at some point.
+										How should you test them, without the need of mocking too much Keycloak internal objects!? At worst, you'll test your mocks, not your extension code
+										Run your tests as integration tests against a hopefully available and proper configured Keycloak server in your environment? What about your friendly colleague who just reconfigured the realm?<br/>
+										For this purpose, I created the `testcontainers-keycloak` module for the Testcontainers project. Having a distinct Keycloak server in your environment, just for your (test-)purposes!
+										Let's dig into this testing option in this session, how you can leverage the Keycloak testcontainer to get your extensions up and running in a short amount of time and also get a fast feedback on version changes!
+										Also, let's discuss, what is the right or wrong level and intensity of testing Keycloak extensions! (spoiler: there is no right or wrong, it depends, like often)
 									</div>
 								</div>
 							</div>
