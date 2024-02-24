@@ -1,2 +1,7 @@
 .DS_Store
-config.codekit3
+_site
+.jekyll-cache
+.bundle
+.sass-cache
+.jekyll-metadata
+Gemfile.lock

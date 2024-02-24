@@ -1,8 +1,13 @@
-version: '3.8'
+version: "3.8"
+volumes:
+  jekyll_data:
+    name: kc_devday_jekyll_data
 services:
-  server:
-    image: nginx
+  jekyll:
+    image: jekyll/jekyll:3.8
+    command: jekyll serve --watch
     ports:
-      - '8000:80'
+      - 4000:4000
     volumes:
-      - .:/usr/share/nginx/html:ro
+      - .:/srv/jekyll:cached
+      - jekyll_data:/usr/local/bundle

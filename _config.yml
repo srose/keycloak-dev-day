@@ -1,0 +1,30 @@
+title: Keycloak DevDay 2024 Germany
+description: Keycloak Developer Community 1-Day-Conference
+url: https://www.keycloak-day.dev
+baseurl: "" # the subpath of your site, e.g. /blog
+pretix: https://pretix.eu/dasniko/keycloak-day-24
+
+# some default values for Front Matter
+defaults:
+  -
+    scope:
+      path: "" # emtpy means all files
+      type: posts
+    values:
+      layout: post
+
+markdown: kramdown
+
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+  - README.md
+  - .git
+  - .sass-cache
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml

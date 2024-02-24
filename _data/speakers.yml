@@ -1,0 +1,98 @@
+- key: asc
+  img: as.jpg
+  name: Alexander Schwartz
+  title: Principal Software Engineer
+  company: Red Hat Inc.
+  social:
+    - url: https://www.linkedin.com/in/alexander-schwartz-86b84520
+      icon: linkedin-in
+    - url: https://github.com/ahus1
+      icon: github
+  bio: |
+    Alexander Schwartz is a Principal Software Engineer at Red Hat working full time as a Keycloak maintainer and technical team lead.
+    At work and in his spare time he codes for Open Source projects. In previous jobs he worked as a software architect and IT consultant.
+    At conferences and user groups he talks about JavaScript front ends, Java back ends, Kubernetes, performance and how to create great documentation with AsciiDoc and Antora.
+- key: tda
+  img: td.jpg
+  name: Thomas Dariomont
+  title: Principal Consultant
+  company: codecentric AG
+  social:
+    - url: https://www.linkedin.com/in/thomasdarimont
+      icon: linkedin-in
+    - url: https://github.com/thomasdarimont
+      icon: github
+  bio: |
+    Thomas Darimont is a Principal Consultant at codecentric AG in Germany. As a digital identity specialist, he helps customers design, implement, and integrate identity platforms based on open-source technologies.
+    <p>Thomas has been involved with the Keycloak project for over nine years and was the first maintainer outside of Red Hat.</p>
+    <p>In his spare time, he loves fostering the local tech community in Saarland by organizing and speaking at tech meetups and contributing to open-source projects.</p>
+- key: nko
+  img: nko.jpg
+  name: Niko Köbler
+  title: Keycloak Expert
+  company: keycloak-experte.de
+  social:
+    - url: https://www.linkedin.com/in/nkoebler
+      icon: linkedin-in
+    - url: https://github.com/dasniko
+      icon: github
+    - url: https://www.youtube.com/@dasniko
+      icon: youtube
+  bio: |
+    Niko works as a freelancer, is known as "Mr. KEYCLOAK" for over 9 years and works as an IAM expert for customers from various industries throughout Europe.
+    He is running a successful KEYCLOAK channel on YouTube since the beginning of 2021 and supports the community in various forums.
+    <p>He is also a well-known and sought-after speaker at IT conferences, co-lead of JUG Darmstadt and writes articles for various tech journals and online magazines.</p>
+- key: sta
+  img: sta.jpeg
+  name: Sophie Tauchert
+  title: IT Security Engineer
+  company: Relaxdays GmbH
+  social:
+    - url: https://github.com/999eagle
+      icon: github
+  bio: |
+    Sophie Tauchert works as an IT-security engineer at Relaxdays GmbH and has been overseeing the introduction of Keycloak as Single-Sign On solution there since the beginning.
+    During that work she has contributed a few things to Keycloak and developed custom in-house plugins extending Keycloak.
+    She is a frequent contributor to open source projects and maintains multiple packages for Nix/NixOS.
+    In her spare time she hosts and manages instances of privacy respecting software like Matrix, Mastodon and TOR.
+- key: rba
+  img: rba.jpg
+  name: Robert Bauer
+  title: Founder | Product Management
+  company: intension GmbH
+  social:
+    - url: https://www.linkedin.com/in/robert-bauer-a3bb334
+      icon: linkedin-in
+  bio: |
+    Robert is Co-Founder of Intension and has been working in the field of Identity and Access Management (IAM) for nearly 25 years. Having worked as a Software Developer for several years, he possesses a strong technical background and has also gained substantial experience on the business side as an IAM Architect and Consultant.
+    <p>He has been working with Keycloak for about 10 years now, assisting organizations utilize Keycloak effectively for their projects and business operations. Currently as the Product Manager for digital identity at Intension, Robert’s main focus is to share his and Intension's 25 years of knowledge and experience in IAM with anyone wanting to launch on their digital transformation journey.</p>
+- key: stj
+  img: stj.jpg
+  name: Sven-Torben Janus
+  title: Principal Software Architect
+  company: Conciso GmbH
+  social:
+    - url: https://www.linkedin.com/in/sventorben
+      icon: linkedin-in
+    - url: https://www.github.com/sventorben
+      icon: github
+  bio: |
+    Sven-Torben Janus formte seine Expertise während seines Informatikstudiums an der TU Dortmund mit Fokus auf verteilte Systeme und Logistik.
+    Seine mehr als 15-jährige Reise in Softwareentwicklung und IT-Beratung begann bei Fraunhofer, wo er sich in Geschäftsprozessmanagement und serviceorientierten Architekturen vertiefte.
+    Seit 2016 prägt er als Principal Software Architect und Partner die Beratung zu Softwarearchitekturen bei der Conciso GmbH. 
+    Sein Herz schlägt für bedarfsorientierte, agile Softwareentwicklung, Domain-Driven Design und soziotechnische Architekturen. 
+    Dabei bringt er seine langjährige Expertise als IAM-Architekt mit Fokus auf Keycloak ein.
+    Sven-Torben Janus ist nicht nur ein versierter Technologe, sondern auch ein engagierter Förderer einer kollaborativen Tech-Gemeinschaft.
+    In seinem Vortrag erwartet die Teilnehmer eine inspirierende Mischung aus Fachwissen und persönlicher Perspektive.
+- key: grp
+  img: dummy.png
+  name: GR Patil
+  title: Co-Founder | CEO
+  company: Phase Two Inc.
+  social:
+    - url: https://github.com/xgp
+      icon: github
+  bio: |
+    GR Patil is the co-founder and CEO of Phase Two, a Keycloak hosting and support company, where he is the principal author of most of its Keycloak extensions. 
+    He has been working with Keycloak for 7 years, and has been building software startups for 27 years.
+    Most recently, he was a staff engineer at Twitter and a co-founder at BrightRoll.

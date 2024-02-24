@@ -1,21 +1,42 @@
+---
+layout: none
+reasons:
+  - Meet maintainers of Keycloak
+  - Meet other developers extending Keycloak
+  - Discover best-practices for operating Keycloak
+  - Learn from others using Keycloak
+  - Grow your Keycloak related network
+  - Free amazing Keycloak DevDay T-Shirt!
+included:
+  - icon: user-tie
+    text: 6+ talks from industry-leading speakers
+  - icon: people-carry
+    text: Access to 2+ workshops
+  - icon: glass-cheers
+    text: Amazing after-party
+  - icon: utensils
+    text: FREE drinks, refreshments, breakfast and lunch
+  - icon: tshirt
+    text: FREE Keycloak DevDay T-Shirt
+---
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>Keycloak DevDay 2024 Germany</title>
+	<title>{{site.title}}</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Keycloak Developer Community 1-Day-Conference">
-	<link rel="shortcut icon" href="favicon.ico"> 
+	<meta name="description" content="{{site.description}}">
+	<link rel="shortcut icon" href="/favicon.ico"> 
 
 	<!-- OpenGraph -->
-	<meta property="og:url" content="https://www.keycloak-day.dev">
+	<meta property="og:url" content="{{site.url}}">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Keycloak DevDay 2024 Germany">
-	<meta property="og:description" content="Keycloak Developer Community 1-Day-Conference">
-	<meta property="og:image" content="https://www.keycloak-day.dev/assets/images/keycloak-dev-day-wallpaper.png">
+	<meta property="og:title" content="{{site.title}}">
+	<meta property="og:description" content="{{site.description}}">
+	<meta property="og:image" content="{{site.url}}/assets/images/keycloak-dev-day-wallpaper.png">
 	
 	<!-- Google Fonts -->
 	<link href="assets/fonts/fonts.css" rel="stylesheet">
@@ -27,7 +48,7 @@
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
 	<!-- Pretix CSS -->
-	<link rel="stylesheet" type="text/css" href="https://pretix.eu/dasniko/keycloak-day-24/widget/v1.css">
+	<link rel="stylesheet" type="text/css" href="{{site.pretix}}/widget/v1.css">
 
 </head> 
 
@@ -38,7 +59,7 @@
 				<nav class="main-nav navbar navbar-expand-lg">
 					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.png" alt="Keycloak DevDay Logo"></a></div>    
 					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Tickets</a></div>
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="{{site.pretix}}" target="_blank">Tickets</a></div>
 					
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -79,7 +100,7 @@
 				<h1 class="hero-heading mb-2">Keycloak DevDay 2024</h1>
 				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>22 Feb <i class="fas fa-map-marker-alt mx-2"></i>Frankfurt, Germany <i class="fas fa-clock mx-2"></i>9am - 5pm</div>
 				<div class="hero-intro mb-4">The Community Class Reunion for <br>Keycloak Developers</div>
-				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Get Tickets</a></div>
+				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="{{site.pretix}}" target="_blank">Get Tickets</a></div>
 				
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
@@ -91,7 +112,7 @@
 			<div class="row">
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">50+</div>
+						<div class="number">100+</div>
 						<div class="unit">Attendees</div>
 					</div><!--//item-->
 				</div><!--//col-->
@@ -124,19 +145,16 @@
 			<div class="benefits-list text-center mb-3">
 				<h4 class="text-center mb-4">Why Join Us</h4>
 				<ul class="list-unstyled text-start d-inline-block">
-					<li><i class="fas fa-check-circle me-2"></i>Meet maintainers of Keycloak</li>
-					<li><i class="fas fa-check-circle me-2"></i>Meet other developers extending Keycloak</li>
-					<li><i class="fas fa-check-circle me-2"></i>Discover best-practices for operating Keycloak</li>
-					<li><i class="fas fa-check-circle me-2"></i>Learn from others using Keycloak</li>
-					<li><i class="fas fa-check-circle me-2"></i>Grow your Keycloak related network</li>
-					<li><i class="fas fa-check-circle me-2"></i>Free amazing Keycloak DevDay T-Shirt!</li>
+					{% for reason in page.reasons %}
+					<li><i class="fas fa-check-circle me-2"></i>{{reason}}</li>
+					{% endfor %}
 				</ul>
 			</div><!--//benefits-list-->
 			<div class="event-countdown text-center mb-3">		   
 				<hh4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</hh4>
 				<div id="countdown-box" class="countdown-box"></div>
 			</div><!--//event-countdown-->
-			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg mb-5" href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Get Your Ticket Today</a></div>
+			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg mb-5" href="{{site.pretix}}" target="_blank">Get Your Ticket Today</a></div>
 		</div><!--//container-->
 	</section><!--//about-section-->
 
@@ -147,139 +165,9 @@
 				We are delighted to be able to present you with a high-quality speaker line-up consisting of leading Keycloak developers, maintainers & experts.
 			</div>
 			<div class="row">
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-aschw" data-bs-toggle="modal" data-bs-target="#modal-speaker-aschw"><img src="./assets/images/speakers/as.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Alexander Schwartz</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Principal Software Engineer</div>
-								<div class="meta">Red Hat</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-aschw" data-bs-toggle="modal" data-bs-target="#modal-speaker-aschw">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://www.linkedin.com/in/alexander-schwartz-86b84520/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="https://github.com/ahus1" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-tdar" data-bs-toggle="modal" data-bs-target="#modal-speaker-tdar"><img src="./assets/images/speakers/td.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Thomas Darimont</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Principal Consultant</div>
-								<div class="meta">codecentric AG</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-tdar" data-bs-toggle="modal" data-bs-target="#modal-speaker-tdar">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://www.linkedin.com/in/thomasdarimont/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="https://github.com/thomasdarimont"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko"><img src="./assets/images/speakers/nko.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Niko Köbler</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Keycloak Expert</div>
-								<div class="meta"><a href="https://www.n-k.de" target="_blank">keycloak-experte.de</a></div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://www.linkedin.com/in/nkoebler/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="https://www.github.com/dasniko" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="https://www.youtube.com/@dasniko" target="_blank"><i class="fab fa-youtube fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-sta" data-bs-toggle="modal" data-bs-target="#modal-speaker-sta"><img src="./assets/images/speakers/sta.jpeg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Sophie Tauchert</h5>
-							<div class="card-text mb-3">
-								<div class="meta">IT Security Engineer</div>
-								<div class="meta">Relaxdays GmbH</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-sta" data-bs-toggle="modal" data-bs-target="#modal-speaker-sta">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://github.com/999eagle" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba"><img src="./assets/images/speakers/rba.jpg" class="card-img-top rounded-0" alt="Robert Bauer"></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Robert Bauer</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Founder | Product Management</div>
-								<div class="meta">intension GmbH</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://www.linkedin.com/in/robert-bauer-a3bb334/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-stj" data-bs-toggle="modal" data-bs-target="#modal-speaker-stj"><img src="./assets/images/speakers/stj.jpg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Sven-Torben Janus</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Principal Software Architect</div>
-								<div class="meta">conciso GmbH</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-stj" data-bs-toggle="modal" data-bs-target="#modal-speaker-stj">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://www.linkedin.com/in/sventorben/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="https://www.github.com/sventorben" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-grp" data-bs-toggle="modal" data-bs-target="#modal-speaker-grp"><img src="./assets/images/speakers/dummy.png" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">GR Patil</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Co-Founder | CEO</div>
-								<div class="meta">Phase Two Inc.</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-grp" data-bs-toggle="modal" data-bs-target="#modal-speaker-grp">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="https://github.com/xgp" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
+				{% include speaker-info.html %}
 			</div><!--//row-->
-			<div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Get Tickets</a></div>
+			<div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="{{site.pretix}}" target="_blank">Get Tickets</a></div>
 		</div><!--//container-->
 		
 	</section><!--//speakers-section-->
@@ -540,25 +428,20 @@
 					
 				</div><!--//tab-1-content-->
 			</div><!--//schedule-tab-content-->
-			<div class="schedule-cta text-center mx-auto"><a href="https://pretix.eu/dasniko/keycloak-day-24/" class="btn btn-secondary btn-lg" target="_blank">Buy Tickets</a></div>
+			<div class="schedule-cta text-center mx-auto"><a href="{{site.pretix}}" class="btn btn-secondary btn-lg" target="_blank">Buy Tickets</a></div>
 		</div><!--//container-->
 	</section><!--//schedule-section-->
 	
 	<section id="tickets-section" class="tickets-section section theme-bg-light">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Tickets</h3>
-			<!--div class="section-intro single-col-max mx-auto text-center m-5">
-				<h4>Sorry, but we are sold out!</h4>
-				<p>Unfortunately, there's <u>no chance</u> to get additional tickets.</p>
-			</div-->
-			<div class="section-intro single-col-max mx-auto text-center mb-4">Please buy your ticket through our <a href="https://pretix.eu/dasniko/keycloak-day-24/" target="_blank">Pretix ticket shop</a>:</div>
-			
+			<div class="section-intro single-col-max mx-auto text-center mb-4">Please buy your ticket through our <a href="{{site.pretix}}" target="_blank">Pretix ticket shop</a>:</div>
 			<div class="row pricing mb-5">
-				<pretix-widget event="https://pretix.eu/dasniko/keycloak-day-24/" single-item-select="button"></pretix-widget>
+				<pretix-widget event="{{site.pretix}}" single-item-select="button"></pretix-widget>
 				<noscript>
 					<div class="pretix-widget">
 						<div class="pretix-widget-info-message">
-							JavaScript is deactivated in your browser. To be able to use our ticket shop without JavaScript, please click <a target="_blank" rel="noopener" href="https://pretix.eu/dasniko/keycloak-day-24/">here</a>.
+							JavaScript is deactivated in your browser. To be able to use our ticket shop without JavaScript, please click <a target="_blank" rel="noopener" href="{{site.pretix}}">here</a>.
 						</div>
 					</div>
 				</noscript>
@@ -567,11 +450,9 @@
 			<div class="offers text-center bg-white p-4 p-lg-5">
 				<h4 class="mb-3">What's included?</h4>
 				<ul class="offers-list list-unstyled d-inline-block mx-auto text-start">
-					<li><span class="icon-holder me-2"><i class="fas fa-user-tie"></i></span>6+ talks from industry-leading speakers</li>
-					<li><span class="icon-holder me-2"><i class="fas fa-people-carry"></i></span>Access to 2+ workshops</li>
-					<li><span class="icon-holder me-2"><i class="fas fa-glass-cheers"></i></span>Amazing after-party</li>
-					<li><span class="icon-holder me-2"><i class="fas fa-utensils"></i></span>FREE drinks, refreshments, breakfast and lunch</li>
-					<li><span class="icon-holder me-2"><i class="fas fa-tshirt"></i></span>FREE Keycloak DevDay T-Shirt</a></li>
+					{% for incl in page.included %}
+					<li><span class="icon-holder me-2"><i class="fas fa-{{incl.icon}}"></i></span>{{incl.text}}</li>
+					{% endfor %}
 				</ul><!--offers-list-->
 			</div><!--//offers-->
 
@@ -606,9 +487,9 @@
 				</div><!--//col-->
 				<div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
 					<div class="figures-holder">
-						<div class="figure figure-1"><img class="shadow" src="assets/images/venue/cc1.jpg" alt=""></div>
-						<div class="figure figure-2"><img class="shadow" src="assets/images/venue/cc2.jpg" alt=""></div>
-						<div class="figure figure-3"><img class="shadow" src="assets/images/venue/cc3.jpg" alt=""></div>
+						<div class="figure figure-1"><img class="shadow" src="/assets/images/venue/cc1.jpg" alt=""></div>
+						<div class="figure figure-2"><img class="shadow" src="/assets/images/venue/cc2.jpg" alt=""></div>
+						<div class="figure figure-3"><img class="shadow" src="/assets/images/venue/cc3.jpg" alt=""></div>
 					</div><!--//figures-holder-->
 				</div><!--//col-->
 			</div><!--//row-->
@@ -619,31 +500,13 @@
 		<div class="container">
 			<h3 class="section-heading text-center mb-5">A big 'Thank You' to our Sponsors &amp; Partners</h3>
 			<div class="row logos justify-content-center align-items-center">
+				{% for sponsor in site.data.sponsors %}
 				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="https://www.codecentric.de/" target="_blank">
-						<img src="./assets/images/logos/codecentric.png" alt="codecentric AG">
+					<a href="{{sponsor.url}}" target="_blank">
+						<img src="/assets/images/logos/{{sponsor.logo}}" alt="{{sponsor.name}}">
 					</a>
 				</div>
-				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="https://www.conciso.de" target="_blank">
-						<img src="./assets/images/logos/conciso-logo-corporate.svg" alt="Conciso GmbH">
-					</a>
-				</div>
-				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="https://www.intension.de" target="_blank">
-						<img src="./assets/images/logos/intension.png" alt="intension GmbH">
-					</a>
-				</div>
-				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="https://www.n-k.de" target="_blank">
-						<img src="./assets/images/logos/nko_signet.png" alt="keycloak-experte.de">
-					</a>
-				</div>
-				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="https://www.redhat.com/" target="_blank">
-						<img src="./assets/images/logos/Logo-Red_Hat-A-Standard-RGB.svg" alt="Red Hat">
-					</a>
-				</div>
+				{% endfor %}
 			</div><!--//row-->
 		</div><!--//container-->
 	</section><!--//sponsors-section-->
@@ -668,272 +531,14 @@
 	</footer>
 
 	<!-- Modal Speaker -->
-	<div class="modal modal-speaker modal-speaker-aschw" id="modal-speaker-aschw" tabindex="-1" role="dialog" aria-labelledby="speaker-aschw-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-aschw-ModalLabel" class="modal-title sr-only">Alexander Schwartz</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-								<img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/as.jpg" alt="" />
-							</div>
-
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Alexander Schwarz</h2>
-								<div class="meta">Principal Software-Engineer</div>
-								<div class="meta mb-2">Red Hat Inc</div>
-								<ul class="social-list list-inline mb-0">
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/alexander-schwartz-86b84520/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="https://github.com/ahus1" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list-->
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							Alexander Schwartz is a Principal Software Engineer at Red Hat working
-							full time as a Keycloak maintainer and technical team lead. At work and
-							in his spare time he codes for Open Source projects. In previous jobs he
-							worked as a software architect and IT consultant. At conferences and
-							user groups he talks about JavaScript front ends, Java back ends,
-							Kubernetes, performance and how to create great documentation with
-							AsciiDoc and Antora.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-tdar" id="modal-speaker-tdar" tabindex="-1" role="dialog" aria-labelledby="speaker-tdar-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-tdar-ModalLabel" class="modal-title sr-only">Thomas Darimont</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/td.jpg" alt="" />
-							</div>
-							
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Thomas Darimont</h2>
-								<div class="meta">Principal Consultant</div>
-								<div class="meta mb-2">codecentric AG</div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/thomasdarimont/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="https://github.com/thomasdarimont" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							Thomas Darimont is a Principal Consultant at codecentric AG in Germany. As a digital identity specialist, he helps customers design, implement, and integrate identity platforms based on open-source technologies.
-						</p>
-						<p class="mb-0">
-							Thomas has been involved with the Keycloak project for over nine years and was the first maintainer outside of Red Hat.
-						</p>
-						<p class="mb-0">
-							In his spare time, he loves fostering the local tech community in Saarland by organizing and speaking at tech meetups and contributing to open-source projects.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-nko" id="modal-speaker-nko" tabindex="-1" role="dialog" aria-labelledby="speaker-nko-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-nko-ModalLabel" class="modal-title sr-only">Niko Köbler</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/nko.jpg" alt="Niko Köbler" />
-							</div>
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Niko Köbler</h2>
-								<div class="meta">Keycloak Expert</div>
-								<div class="meta mb-2"><a href="https://www.n-k.de" target="_blank">keycloak-experte.de</a></div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/nkoebler/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="https://www.github.com/dasniko" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="https://www.youtube.com/@dasniko" target="_blank"><i class="fab fa-youtube fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							Niko works as a freelancer, is known as "Mr KEYCLOAK" for over 9 years and works as an IAM expert for customers from various industries throughout Europe.
-							He is running a successful KEYCLOAK channel on YouTube since the beginning of 2021 and supports the community in various forums.
-						</p><p>
-							He is also a well-known and sought-after speaker at IT conferences, co-lead of JUG Darmstadt and writes articles for various tech journals and online magazines.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-sta" id="modal-speaker-sta" tabindex="-1" role="dialog" aria-labelledby="speaker-aschw-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-sta-ModalLabel" class="modal-title sr-only">Sophie Tauchert</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-								<img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/sta.jpeg" alt="" />
-							</div>
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Sophie Tauchert</h2>
-								<div class="meta">IT Security Engineer</div>
-								<div class="meta mb-2">Relaxdays GmbH</div>
-								<ul class="social-list list-inline mb-0">
-									<li class="list-inline-item"><a  href="https:// github.com/999eagle" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list-->
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p class="mb-0">
-							Sophie Tauchert works as an IT-security engineer at Relaxdays GmbH and has been overseeing the introduction of Keycloak as Single-Sign On solution there since the beginning.
-							During that work she has contributed a few things to Keycloak and developed custom in-house plugins extending Keycloak.
-							She is a frequent contributor to open source projects and maintains multiple packages for Nix/NixOS.
-							In her spare time she hosts and manages instances of privacy respecting software like Matrix, Mastodon and TOR.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-stj" id="modal-speaker-stj" tabindex="-1" role="dialog" aria-labelledby="speaker-stj-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-stj-ModalLabel" class="modal-title sr-only">Sven-Torben Janus</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/stj.jpg" alt="Sven-Torben Janus" />
-							</div>
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Sven-Torben Janus</h2>
-								<div class="meta">Principal Software Architect</div>
-								<div class="meta mb-2"><a href="https://www.conciso.de" target="_blank">Conciso GmbH</a></div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/sventorben/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="https://www.github.com/sventorben" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							Sven-Torben Janus formte seine Expertise während seines Informatikstudiums an der TU Dortmund mit Fokus auf verteilte Systeme und Logistik.
-							Seine mehr als 15-jährige Reise in Softwareentwicklung und IT-Beratung begann bei Fraunhofer, wo er sich in Geschäftsprozessmanagement und serviceorientierten Architekturen vertiefte.
-							Seit 2016 prägt er als Principal Software Architect und Partner die Beratung zu Softwarearchitekturen bei der Conciso GmbH. 
-							Sein Herz schlägt für bedarfsorientierte, agile Softwareentwicklung, Domain-Driven Design und soziotechnische Architekturen. 
-							Dabei bringt er seine langjährige Expertise als IAM-Architekt mit Fokus auf Keycloak ein.
-							Sven-Torben Janus ist nicht nur ein versierter Technologe, sondern auch ein engagierter Förderer einer kollaborativen Tech-Gemeinschaft.
-							In seinem Vortrag erwartet die Teilnehmer eine inspirierende Mischung aus Fachwissen und persönlicher Perspektive.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-rba" id="modal-speaker-rba" tabindex="-1" role="dialog" aria-labelledby="speaker-rba-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-rba-ModalLabel" class="modal-title sr-only">Robert Bauer</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/rba.jpg" alt="Robert Bauer" />
-							</div>
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Robert Bauer</h2>
-								<div class="meta">Founder | Product Management</div>
-								<div class="meta mb-2"><a href="https://www.intension.de" target="_blank">intension GmbH</a></div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/robert-bauer-a3bb334/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							Robert is Co-Founder of Intension and has been working in the field of Identity and Access Management (IAM) for nearly 25 years. Having worked as a Software Developer for several years, he possesses a strong technical background and has also gained substantial experience on the business side as an IAM Architect and Consultant. 
-						</p><p>
-							He has been working with Keycloak for about 10 years now, assisting organizations utilize Keycloak effectively for their projects and business operations. Currently as the Product Manager for digital identity at Intension, Robert’s main focus is to share his and Intension's 25 years of knowledge and experience in IAM with anyone wanting to launch on their digital transformation journey.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
-	<div class="modal modal-speaker modal-speaker-grp" id="modal-speaker-grp" tabindex="-1" role="dialog" aria-labelledby="speaker-grp-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-grp-ModalLabel" class="modal-title sr-only">GR Patil</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="./assets/images/speakers/dummy.png" alt="GR Patil" />
-							</div>
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">GR Patil</h2>
-								<div class="meta">Co-Founder | CEO</div>
-								<div class="meta mb-2"><a href="https://phasetwo.io" target="_blank">Phase Two Inc.</a></div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="https://github.com/xgp" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>
-							GR Patil is the co-founder and CEO of Phase Two, a Keycloak hosting and support company, where he is the principal author of most of its Keycloak extensions. 
-							He has been working with Keycloak for 7 years, and has been building software startups for 27 years.
-							Most recently, he was a staff engineer at Twitter and a co-founder at BrightRoll.
-						</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
+	{% include speaker-modal.html %}
 	
 	<!-- Javascript -->          
-	<script src="assets/plugins/popper.min.js"></script>
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-	<script src="assets/plugins/smoothscroll.min.js"></script>
-	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-	<script src="assets/js/main.js"></script>  
+	<script src="/assets/plugins/popper.min.js"></script>
+	<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+	<script src="/assets/plugins/smoothscroll.min.js"></script>
+	<script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+	<script src="/assets/js/main.js"></script>  
 	<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
 
 </body>
