@@ -13,7 +13,7 @@
 {% if talk.links %}
 <ul>
     {% for link in talk.links %}
-    <i class="fa fa-link"></i>&nbsp;{{link.type}}: <a href="{{link.url}}" target="_blank">{{link.url}}</a>
+    <i class="fa fa-link"></i>&nbsp;<a href="{{link.url}}" target="_blank">{{link.type}}</a>
     {% endfor %}
 </ul>
 {% endif %}

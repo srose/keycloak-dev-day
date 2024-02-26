@@ -64,6 +64,9 @@
     It is also an exemplary set of Keycloak extensions, which we will use in this talk to facilitate developers understanding of how to use the plugin architecture of Keycloak to solve problems not addressed by its core functionality.
     <br/>We will demonstrate the creation and use of custom Authenticators, protocol mappers, REST resources, JPA entities, model providers, and others to show how it is possible to create integrated functionality with many aspects of the Keycloak core.
     In this, we present one solution to the common use case of multi-tenancy.
+  links:
+    - url: https://docs.google.com/presentation/d/1fbrK1wOIo9reYEwesS1sx_N-T4fTIs4NI1BaTuF0sU4/edit?usp=drive_link
+      type: Slides
 - title: Keycloak durch die Identity Management Brille betrachtet
   speaker: rba
   room: Chill-out Area
