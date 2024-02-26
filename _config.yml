@@ -3,6 +3,7 @@ description: Keycloak Developer Community 1-Day-Conference
 url: https://www.keycloak-day.dev
 baseurl: "" # the subpath of your site, e.g. /blog
 pretix: https://pretix.eu/dasniko/keycloak-day-24
+showTicketSale: false
 
 # some default values for Front Matter
 defaults:

@@ -1,0 +1,74 @@
+- title: "What's next in Keycloak, the Open Source Identity and Access Management solution"
+  speaker: asc
+  room: Main Area
+  abstract: |
+    Adding authentication and authorization to your application landscape is the key to automate yourprocesses and enable new business capabilities. All of this requires APIs and services for administration and automation which only an Identity and Access Management solution can provide.
+    <br/>More than 10 years ago the Keycloak maintainers committed the first code to their repository. In the following years Keycloak built a growing community by offering a flexible Open Source IAM. You can use it both out of the box or extend it to fit your organization’s needs.
+    <br/>After presenting some of the highlights of the latest Keycloak release, this talk focuses on the advancements in OpenID Connect, as well as Keycloak’s pursuit for scalability, high availability and customizability via declarative user profiles.
+  links:
+    - url: https://speakerdeck.com/ahus1/whats-next-in-keycloak-the-open-source-iam-kc24
+      type: Slides
+- title: Flexible Access Management with Keycloak and Open Policy Agent
+  speaker: tda
+  room: Main Area
+  abstract: |
+    Explore the integration of Keycloak and Open Policy Agent (OPA) for dynamic access management.
+    Keycloak's identity and access management capabilities and OPA's potent policy as code approach offer a flexible solution.
+    The talk will showcase the integration of OPA with Keycloak and cover Keycloak's authentication flows, required actions, service access policies, and OPA's policy definition and enforcement mechanisms.
+    Practical examples will demonstrate how to achieve fine-grained, context-aware access control in modern applications.
+    Suitable for developers and architects.
+- title: "Unlocking the Power of Keycloak: Best Practices for Extension Development"
+  speaker: stj
+  room: Chill-out Area
+  abstract: |
+    Keycloak ist eine leistungsstarke Open-Source-Identitäts- und Zugriffsverwaltungslösung, die bereits eine breite Palette von Funktionen bietet.
+    Für viele Organisationen ist es jedoch unerlässlich, Keycloak anzupassen und zu erweitern, um ihre individuellen Authentifizierungs- und Autorisierungsanforderungen zu erfüllen.
+    In dieser Präsentation werde ich meine Erfahrungen bei der Entwicklung und Pflege von zwei beliebten Keycloak-Erweiterungen teilen: <i>Home IdP Discovery</i> und <i>Keycloak Restrict Client Auth.</i>
+    Wir werden Best Practices für die Entwicklung von Keycloak-Erweiterungen diskutieren.
+    Außerdem werden wir unsere Tipps für das Testen, Debuggen und Bereitstellen von Keycloak-Erweiterungen teilen.
+    Egal, ob du neu in Keycloak bist oder ein erfahrener Entwickler, diese Präsentation bietet wertvolle Einblicke, wie man durch effektive Entwicklungen von Erweiterungen die Power von Keycloak freisetzen kann.
+- title: Automating Keycloak configuration for compliance and agile development
+  speaker: sta
+  room: Main Area
+  abstract: |
+    Configuring identity access management in a heavily microservice-based environment with multiple
+    software development teams can be challenging. Once the configuration grows, it is difficult to keep
+    it consistent and secure when changing it manually.
+    Using the Keycloak admin API allows us to largely automate compliance checks, configuration updates
+    and deployments between staging and production environments. The new OpenAPI spec has been very
+    helpful in developing those automations in Rust, which I present in this talk.
+  links:
+    - url: https://github.com/999eagle/keycloakdevday2024
+      type: Resources
+- title: Keycloak Extension Develpment with Testcontainers
+  speaker: nko
+  room: Chill-out Area
+  abstract: |
+    Testing of Keycloak Extensions can be cumbersome at some point.
+    How should you test them, without the need of mocking too much Keycloak internal objects!? At worst, you'll test your mocks, not your extension code
+    Run your tests as integration tests against a hopefully available and proper configured Keycloak server in your environment? What about your friendly colleague who just reconfigured the realm?<br/>
+    For this purpose, I created the `testcontainers-keycloak` module for the Testcontainers project. Having a distinct Keycloak server in your environment, just for your (test-)purposes!
+    Let's dig into this testing option in this session, how you can leverage the Keycloak testcontainer to get your extensions up and running in a short amount of time and also get a fast feedback on version changes!
+    Also, let's discuss, what is the right or wrong level and intensity of testing Keycloak extensions! (spoiler: there is no right or wrong, it depends, like often)
+  links:
+    - url: https://github.com/dasniko/testcontainers-keycloak
+      type: Resources
+- title: Multi-Tenancy with Keycloak
+  speaker: grp
+  room: Main Area
+  abstract: |
+    Keycloak is a mature Identity and Access Management (IAM) system that is highly extensible.
+    The authors had the foresight to build Keycloak as a set of core Service Provider Interfaces (SPIs) that could allow most portions of the server to be extended or replaced.
+    This enables Keycloak to focus on the core authentication and authorization protocol layers, while allowing developers to easily add and change functionality according to their requirements.
+    <br/>This talk presents <i>keycloak-orgs</i>, which extends the core Keycloak server with entities that model Organizations (tenants), and their related Members, Roles and Identity Providers.
+    It is also an exemplary set of Keycloak extensions, which we will use in this talk to facilitate developers understanding of how to use the plugin architecture of Keycloak to solve problems not addressed by its core functionality.
+    <br/>We will demonstrate the creation and use of custom Authenticators, protocol mappers, REST resources, JPA entities, model providers, and others to show how it is possible to create integrated functionality with many aspects of the Keycloak core.
+    In this, we present one solution to the common use case of multi-tenancy.
+- title: Keycloak durch die Identity Management Brille betrachtet
+  speaker: rba
+  room: Chill-out Area
+  abstract: |
+    Keycloak kann weit mehr als Authentisierung, das ist klar.
+    Auf der Webseite verspricht Keycloak, ein "Open Source Identity and Access Management" zu sein.
+    Und Identity Management ist heute ein kritischer Aspekt jeder Unternehmung, egal ob durch die IT-Security oder die Datenschutz-Brille betrachtet.
+    Deshalb wollen wir uns in diesem Talk verschiedene IAM-Szenarien anschauen, um zu verstehen, inwieweit Keycloak die Erwartungen erfüllt, oder ob es Bereiche gibt, die Nachhilfe benötigen, um den heutigen Anforderungen an IAM-Systeme gerecht zu werden.

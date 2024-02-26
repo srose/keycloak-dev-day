@@ -53,45 +53,14 @@ included:
 </head> 
 
 <body>    
-	<header id="header" class="header fixed-top">	    
-		<div class="branding">
-			<div class="container-fluid">
-				<nav class="main-nav navbar navbar-expand-lg">
-					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.png" alt="Keycloak DevDay Logo"></a></div>    
-					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="{{site.pretix}}" target="_blank">Tickets</a></div>
-					
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
-						<ul class="nav navbar-nav">
-							
-							<li class="nav-item"><a class="nav-link scrollto" href="#about-section">About</a></li>                                              
-							<li class="nav-item"><a class="nav-link scrollto" href="#speakers-section">Speakers</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#schedule-section">Schedule</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#tickets-section">Tickets</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#venue-section">Venue</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#sponsors-section">Sponsors</a></li>
-						</ul><!--//nav-->
-					</div><!--//navabr-collapse-->
-
-				</nav><!--//main-nav-->
-				
-			</div><!--//container-->
-		</div><!--//branding-->
-	</header><!--//header-->
+	{% include header.html %}
 	
 	<div id="hero-block" class="hero-block">
 		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item-1 carousel-item active">
-				</div>
-				<div class="carousel-item-2 carousel-item">
-				</div>
-				<div class="carousel-item-3 carousel-item">
-				</div>
+				<div class="carousel-item-1 carousel-item active"></div>
+				<div class="carousel-item-2 carousel-item"></div>
+				<div class="carousel-item-3 carousel-item"></div>
 			</div>
 		</div>
 		<div class="hero-block-mask"></div>
@@ -100,8 +69,9 @@ included:
 				<h1 class="hero-heading mb-2">Keycloak DevDay 2024</h1>
 				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>22 Feb <i class="fas fa-map-marker-alt mx-2"></i>Frankfurt, Germany <i class="fas fa-clock mx-2"></i>9am - 5pm</div>
 				<div class="hero-intro mb-4">The Community Class Reunion for <br>Keycloak Developers</div>
+				{% if site.showTicketSale %}
 				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="{{site.pretix}}" target="_blank">Get Tickets</a></div>
-				
+				{% endif %}
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
 
@@ -138,397 +108,23 @@ included:
 		</div><!--//container-->
 	</div><!--//stats-block-->
 
-	<section id="about-section" class="about-section section theme-bg-light">
-		<div class="container">
-			<h3 class="section-heading text-center mb-3">About Keycloak DevDay</h3>
-			<div class="section-intro single-col-max mx-auto mb-4">Keycloak is an awesome open source identity and access management solution driven by a huge community and with strong support from Red Hat. The Keycloak Developer Day invites everyone involved using Keycloak to provide its value to customers and employees in using digital products and services! Meet maintainers, extension-developers, operators and others to talk about Keycloak a full day!</div>
-			<div class="benefits-list text-center mb-3">
-				<h4 class="text-center mb-4">Why Join Us</h4>
-				<ul class="list-unstyled text-start d-inline-block">
-					{% for reason in page.reasons %}
-					<li><i class="fas fa-check-circle me-2"></i>{{reason}}</li>
-					{% endfor %}
-				</ul>
-			</div><!--//benefits-list-->
-			<div class="event-countdown text-center mb-3">		   
-				<hh4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</hh4>
-				<div id="countdown-box" class="countdown-box"></div>
-			</div><!--//event-countdown-->
-			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg mb-5" href="{{site.pretix}}" target="_blank">Get Your Ticket Today</a></div>
-		</div><!--//container-->
-	</section><!--//about-section-->
+	{% include about.html %}
 
-	<section id="speakers-section" class="speakers-section section">
-		<div class="container">
-			<h3 class="section-heading text-center mb-3">Speakers</h3>
-			<div class="section-intro text-center single-col-max mx-auto mb-5">
-				We are delighted to be able to present you with a high-quality speaker line-up consisting of leading Keycloak developers, maintainers & experts.
-			</div>
-			<div class="row">
-				{% include speaker-info.html %}
-			</div><!--//row-->
-			<div class="speakers-cta text-center py-3"><a class="btn btn-primary btn-lg" href="{{site.pretix}}" target="_blank">Get Tickets</a></div>
-		</div><!--//container-->
-		
-	</section><!--//speakers-section-->
+	{% include speakers.html %}
 	
 	<div class="container">
 		<hr>
 	</div>
-	
-	<section id="schedule-section" class="schedule-section section">
-		<div class="container">
-			<h3 class="section-heading text-center mb-5">Schedule</h3>
-			
-			<!-- Nav tabs -->
-			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
-				<li class="nav-item me-2">
-					<a class="nav-link active" id="tab-1" data-bs-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
-						<span class="heading">Thu 22, Feb</span>
-						<span class="meta d-none">Day 1</span>
-					</a>
-				</li>
-			</ul>
-			
-			<!-- Tab panes -->
-			<div class="schedule-tab-content tab-content">
-				<div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">8:00 - 9:00</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Breakfast Reception</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
-							<div class="desc">
-								Enjoy your arrival and have some coffee ☕️ and a small breakfast 🥐 if you like.
-								Get ready to start into a <i>Keycloakified</i> day!
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">9:00 - 9:15</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Welcome &amp; Opening Note</h3>
-							<div class="profile mb-3">
-								<div class="name">Niko Köbler, Sebastian Rose</div>
-							</div><!--//profile-->
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">9:15 - 10:00</h4>
-							<div class="profile">
-								<div class="name">Keynote</div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">What s next in Keycloak, the Open Source Identity and Access Management solution</h3>
-							<div class="profile mb-3">
-								<div class="name"><a class="theme-link" href="#modal-speaker-aschw" data-bs-toggle="modal" data-bs-target="#modal-speaker-aschw">Alexander Schwartz</a></div>
-							</div><!--//profile-->
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
-							<div class="desc">
-								Adding authentication and authorization to your application landscape is the key to automate yourprocesses and enable new business capabilities. All of this requires APIs and services for administration and automation which only an Identity and Access Management solution can provide.
-								<br/>
-								More than 10 years ago the Keycloak maintainers committed the first code to their repository. In the following years Keycloak built a growing community by offering a flexible Open Source IAM. You can use it both out of the box or extend it to fit your organization’s needs.
-								<br/>
-								After presenting some of the highlights of the latest Keycloak release, this talk focuses on the advancements in OpenID Connect, as well as Keycloak’s pursuit for scalability, high availability and customizability via declarative user profiles.
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">10:15 - 11:00</h4>
-							<div class="profile">
-								<div class="name">Talks</div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<div class="row">
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Flexible Access Management with Keycloak and Open Policy Agent</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-tdar" data-bs-toggle="modal" data-bs-target="#modal-speaker-tdar">Thomas Darimont</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
-									<div class="desc">
-										Explore the integration of Keycloak and Open Policy Agent (OPA) for dynamic access management.
-										Keycloak's identity and access management capabilities and OPA's potent policy as code approach offer a flexible solution.
-										The talk will showcase the integration of OPA with Keycloak and cover Keycloak's authentication flows, required actions, service access policies, and OPA's policy definition and enforcement mechanisms.
-										Practical examples will demonstrate how to achieve fine-grained, context-aware access control in modern applications.
-										Suitable for developers and architects.
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Unlocking the Power of Keycloak: Best Practices for Extension Development</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-stj" data-bs-toggle="modal" data-bs-target="#modal-speaker-stj">Sven-Torben Janus</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
-									<div class="desc">
-										Keycloak ist eine leistungsstarke Open-Source-Identitäts- und Zugriffsverwaltungslösung, die bereits eine breite Palette von Funktionen bietet.
-										Für viele Organisationen ist es jedoch unerlässlich, Keycloak anzupassen und zu erweitern, um ihre individuellen Authentifizierungs- und Autorisierungsanforderungen zu erfüllen.
-										In dieser Präsentation werde ich meine Erfahrungen bei der Entwicklung und Pflege von zwei beliebten Keycloak-Erweiterungen teilen: <i>Home IdP Discovery</i> und <i>Keycloak Restrict Client Auth.</i>
-										Wir werden Best Practices für die Entwicklung von Keycloak-Erweiterungen diskutieren.
-										Außerdem werden wir unsere Tipps für das Testen, Debuggen und Bereitstellen von Keycloak-Erweiterungen teilen.
-										Egal, ob du neu in Keycloak bist oder ein erfahrener Entwickler, diese Präsentation bietet wertvolle Einblicke, wie man durch effektive Entwicklungen von Erweiterungen die Power von Keycloak freisetzen kann.
-									</div>
-								</div>
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">11:15 - 11:45</h4>
-							<div class="profile">
-								<div class="name">Talks</div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<div class="row">
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Automating Keycloak configuration for compliance and agile development</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-sta" data-bs-toggle="modal" data-bs-target="#modal-speaker-sta">Sophie Tauchert</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
-									<div class="desc">
-										Configuring identity access management in a heavily microservice-based environment with multiple
-										software development teams can be challenging. Once the configuration grows, it is difficult to keep
-										it consistent and secure when changing it manually.
-										Using the Keycloak admin API allows us to largely automate compliance checks, configuration updates
-										and deployments between staging and production environments. The new OpenAPI spec has been very
-										helpful in developing those automations in Rust, which I present in this talk.
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Keycloak Extension Develpment with Testcontainers</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-nko" data-bs-toggle="modal" data-bs-target="#modal-speaker-nko">Niko Köbler</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
-									<div class="desc">
-										Testing of Keycloak Extensions can be cumbersome at some point.
-										How should you test them, without the need of mocking too much Keycloak internal objects!? At worst, you'll test your mocks, not your extension code
-										Run your tests as integration tests against a hopefully available and proper configured Keycloak server in your environment? What about your friendly colleague who just reconfigured the realm?<br/>
-										For this purpose, I created the `testcontainers-keycloak` module for the Testcontainers project. Having a distinct Keycloak server in your environment, just for your (test-)purposes!
-										Let's dig into this testing option in this session, how you can leverage the Keycloak testcontainer to get your extensions up and running in a short amount of time and also get a fast feedback on version changes!
-										Also, let's discuss, what is the right or wrong level and intensity of testing Keycloak extensions! (spoiler: there is no right or wrong, it depends, like often)
-									</div>
-								</div>
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-other">
-						<div class="meta">
-							<h4 class="time mb-3">11:45 - 13:00</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Lunch Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
-							<div class="desc">Let's have some delicious food together.</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">13:00 - 13:45</h4>
-							<div class="profile">
-								<div class="name">Talks</div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<div class="row">
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Multi-Tenancy with Keycloak</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-grp" data-bs-toggle="modal" data-bs-target="#modal-speaker-grp">GR Patil</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
-									<div class="desc">
-										Keycloak is a mature Identity and Access Management (IAM) system that is highly extensible.
-										The authors had the foresight to build Keycloak as a set of core Service Provider Interfaces (SPIs) that could allow most portions of the server to be extended or replaced.
-										This enables Keycloak to focus on the core authentication and authorization protocol layers, while allowing developers to easily add and change functionality according to their requirements.
-										<br/>
-										This talk presents <i>keycloak-orgs</i>, which extends the core Keycloak server with entities that model Organizations (tenants), and their related Members, Roles and Identity Providers.
-										It is also an exemplary set of Keycloak extensions, which we will use in this talk to facilitate developers understanding of how to use the plugin architecture of Keycloak to solve problems not addressed by its core functionality.
-										<br/>
-										We will demonstrate the creation and use of custom Authenticators, protocol mappers, REST resources, JPA entities, model providers, and others to show how it is possible to create integrated functionality with many aspects of the Keycloak core.
-										In this, we present one solution to the common use case of multi-tenancy.
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Keycloak durch die Identity Management Brille betrachtet</h3>
-									<div class="profile mb-3">
-										<div class="name"><a class="theme-link" href="#modal-speaker-rba" data-bs-toggle="modal" data-bs-target="#modal-speaker-rba">Robert Bauer</a></div>
-									</div><!--//profile-->
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
-									<div class="desc">
-										Keycloak kann weit mehr als Authentisierung, das ist klar.
-										Auf der Webseite verspricht Keycloak, ein "Open Source Identity and Access Management" zu sein.
-										Und Identity Management ist heute ein kritischer Aspekt jeder Unternehmung, egal ob durch die IT-Security oder die Datenschutz-Brille betrachtet.
-										Deshalb wollen wir uns in diesem Talk verschiedene IAM-Szenarien anschauen, um zu verstehen, inwieweit Keycloak die Erwartungen erfüllt, oder ob es Bereiche gibt, die Nachhilfe benötigen, um den heutigen Anforderungen an IAM-Systeme gerecht zu werden.
-									</div>
-								</div>
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-talk">
-						<div class="meta">
-							<h4 class="time mb-3">14:00 - 16:45</h4>
-							<div class="profile">
-								<div class="name">Participant Driven</div>
-							</div><!--//profile-->
-						</div><!--//meta-->
-						<div class="content">
-							<div class="row">
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Unconference / Bring Your Own Topics</h3>
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 1</div>
-									<div class="desc">
-										<b>Bring our own topics to discuss with and present to the other participants.</b>
-										<br/><br/>
-										In a classic Unconference format, you will decide upon the content first, then build a quick schedule and finally present/discuss your topics.
-									</div>
-								</div>
-								<div class="col-xs-12 col-lg-6">
-									<h3 class="title mb-3">Discussions &amp; Workshops</h3>
-									<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room 2</div>
-									<div class="desc">
-										<b>Discussion:</b>
-										Meet the Maintainers of Keycloak
-										<br/><br/>
-										<b>Workshop:</b>
-										Contrib Fest / Become a Contributor to the Keycloak project
-									</div>
-								</div>
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					<div class="item item-other">
-						<div class="meta">
-							<h4 class="time mb-3">16:45 - 17:00 / Open End</h4>
-						</div><!--//meta-->
-						<div class="content">
-							<h3 class="title mb-3">Closing Note, Feedback, Pizza 🍕 &amp; Drinks</h3>
-							<div class="profile mb-3">
-								<div class="name">Niko Köbler, Sebastian Rose</div>
-							</div><!--//profile-->
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Area</div>
-							<div class="desc">
-								We want to thank YOU 🙏 for being part of the first German Keycloak DevDay and asking for your feedback.
-								<br/>
-								Afterwards, we'll enjoy the end of the day with some Pizza &amp; Drinks, with chats, further discussions, etc.
-							</div>
-						</div><!--//content-->
-					</div><!--//item-->
-					
-				</div><!--//tab-1-content-->
-			</div><!--//schedule-tab-content-->
-			<div class="schedule-cta text-center mx-auto"><a href="{{site.pretix}}" class="btn btn-secondary btn-lg" target="_blank">Buy Tickets</a></div>
-		</div><!--//container-->
-	</section><!--//schedule-section-->
-	
-	<section id="tickets-section" class="tickets-section section theme-bg-light">
-		<div class="container">
-			<h3 class="section-heading text-center mb-3">Tickets</h3>
-			<div class="section-intro single-col-max mx-auto text-center mb-4">Please buy your ticket through our <a href="{{site.pretix}}" target="_blank">Pretix ticket shop</a>:</div>
-			<div class="row pricing mb-5">
-				<pretix-widget event="{{site.pretix}}" single-item-select="button"></pretix-widget>
-				<noscript>
-					<div class="pretix-widget">
-						<div class="pretix-widget-info-message">
-							JavaScript is deactivated in your browser. To be able to use our ticket shop without JavaScript, please click <a target="_blank" rel="noopener" href="{{site.pretix}}">here</a>.
-						</div>
-					</div>
-				</noscript>
-			</div><!--//pricing-->
-			
-			<div class="offers text-center bg-white p-4 p-lg-5">
-				<h4 class="mb-3">What's included?</h4>
-				<ul class="offers-list list-unstyled d-inline-block mx-auto text-start">
-					{% for incl in page.included %}
-					<li><span class="icon-holder me-2"><i class="fas fa-{{incl.icon}}"></i></span>{{incl.text}}</li>
-					{% endfor %}
-				</ul><!--offers-list-->
-			</div><!--//offers-->
 
-		</div><!--//container-->
-	</section><!--//tickets-section-->
-	
-	
-	<section id="venue-section" class="venue-section section  theme-bg-primary text-white">
-		<div class="container">
-			<h3 class="section-heading text-center mb-5 text-white">Venue</h3>
-			<div class="row gx-5 py-lg-5">
-				<div class="col-12 col-lg-7 h-100">
-					<div class="desc">
-						<h4 class="text-white mb-3">Location</h4>
-						<p class="text-white">
-							codecentric AG<br/>
-							Lise-Meitner-Straße 4<br/>
-							60486 Frankfurt / Main
-						</p>
-						<h4 class="text-white mt-3 mt-lg-5 mb-3">Directions</h4>
-						<p class="text-white">
-							Please use <a href="https://maps.app.goo.gl/7VThdUBVnY4VY3wX9" target="_blank" rel="noopener noreferrer external" class="text-white">Google Maps</a> to find out how to get there.
-						</p>
-						<a href="https://maps.app.goo.gl/7VThdUBVnY4VY3wX9" target="_blank" rel="noopener noreferrer external" class="btn btn-ghost mb-3">Google Maps</a>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.4231819421952!2d8.63651998904401!3d50.115802738005556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd09676358ba5f%3A0x85c278cdd744dc88!2scodecentric%20AG!5e0!3m2!1sde!2sde!4v1701107073470!5m2!1sde!2sde" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						<h4 class="text-white mb-3 mt-3 mt-lg-5">Facilities &amp; Accommodations</h4>
-						<p>If you need a hotel, or some other place to stay overnight, we can recommend using Booking.com
-						</p>
-						<a class="btn btn-ghost" href="https://www.booking.com/searchresults.de.html?ss=Frankfurt+am+Main%2C+Hessen%2C+Deutschland&sb_travel_purpose=business&label=gen173nr-1BCAEoggI46AdIM1gEaDuIAQGYAQe4AQfIAQzYAQHoAQGIAgGoAgO4AtDUk6sGwAIB0gIkNmJlMjM5YmQtOGNlMC00YjI5LWI2ZGEtOWZmM2RjYjA5NWFl2AIF4AIB&sid=72fb5af8375b32e56db922df70fad0bf&aid=304142&lang=de&sb=1&src_elem=sb&src=index&dest_id=-1771148&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=de&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=632d87283f410695&ac_meta=GhA2MzJkODcyODNmNDEwNjk1IAAoATICZGU6CUZyYW5rZnVydEAASgBQAA%3D%3D&checkin=2024-02-21&checkout=2024-02-22&group_adults=1&no_rooms=1&group_children=0" target="_blank" rel="noopener noreferrer external">Search Hotels</a>
-						<div class="small">(we are neither related in any way to Booking.com, not is this an affiliate link, it's just a personal recommendation!)</div>
-					</div><!--//desc-->
-				</div><!--//col-->
-				<div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
-					<div class="figures-holder">
-						<div class="figure figure-1"><img class="shadow" src="/assets/images/venue/cc1.jpg" alt=""></div>
-						<div class="figure figure-2"><img class="shadow" src="/assets/images/venue/cc2.jpg" alt=""></div>
-						<div class="figure figure-3"><img class="shadow" src="/assets/images/venue/cc3.jpg" alt=""></div>
-					</div><!--//figures-holder-->
-				</div><!--//col-->
-			</div><!--//row-->
-		</div><!--//container-->
-	</section><!--//venue-section-->
+	{% include schedule.html %}
 
-	<section id="sponsors-section" class="sponsors-section section">
-		<div class="container">
-			<h3 class="section-heading text-center mb-5">A big 'Thank You' to our Sponsors &amp; Partners</h3>
-			<div class="row logos justify-content-center align-items-center">
-				{% for sponsor in site.data.sponsors %}
-				<div class="logo-item col-6 col-md-4 col-lg-2">
-					<a href="{{sponsor.url}}" target="_blank">
-						<img src="/assets/images/logos/{{sponsor.logo}}" alt="{{sponsor.name}}">
-					</a>
-				</div>
-				{% endfor %}
-			</div><!--//row-->
-		</div><!--//container-->
-	</section><!--//sponsors-section-->
+	{% include tickets.html %}
 
-	<footer class="footer py-5 theme-bg-primary">
-		<div class="container text-center">
-			
-			<ul class="footer-links list-inline mx-auto mb-4">
-				<li class="list-inline-item"><a href="https://berlincodeofconduct.org/" target="_blank">Code of Conduct</a></li>
-				<li class="list-inline-item">|</li>
-				<li class="list-inline-item"><a href="mailto:info@keycloak-day.dev">Contact</a></li>
-				<li class="list-inline-item">|</li>
-				<li class="list-inline-item me-0"><a href="https://www.n-k.de/imprint" target="_blank">Imprint</a></li>
-				<li class="list-inline-item">|</li>
-				<li class="list-inline-item me-0"><a href="https://www.n-k.de/privacy" target="_blank">Privacy</a></li>
-			</ul><!--//footer-link-->
-			
-			 <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-			
-		</div><!--//container-->	    
-	</footer>
+	{% include venue.html %}
+
+	{% include sponsors.html %}
+
+	{% include footer.html %}
 
 	<!-- Modal Speaker -->
 	{% include speaker-modal.html %}
