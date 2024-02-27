@@ -27,6 +27,9 @@
     Wir werden Best Practices für die Entwicklung von Keycloak-Erweiterungen diskutieren.
     Außerdem werden wir unsere Tipps für das Testen, Debuggen und Bereitstellen von Keycloak-Erweiterungen teilen.
     Egal, ob du neu in Keycloak bist oder ein erfahrener Entwickler, diese Präsentation bietet wertvolle Einblicke, wie man durch effektive Entwicklungen von Erweiterungen die Power von Keycloak freisetzen kann.
+  links:
+    - url: https://conciso.de/wp-content/uploads/2024/02/20240222_KeycloakDevDay.pdf
+      type: Slides
 - title: Automating Keycloak configuration for compliance and agile development
   speaker: sta
   room: Main Area
