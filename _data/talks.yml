@@ -78,3 +78,6 @@
     Auf der Webseite verspricht Keycloak, ein "Open Source Identity and Access Management" zu sein.
     Und Identity Management ist heute ein kritischer Aspekt jeder Unternehmung, egal ob durch die IT-Security oder die Datenschutz-Brille betrachtet.
     Deshalb wollen wir uns in diesem Talk verschiedene IAM-Szenarien anschauen, um zu verstehen, inwieweit Keycloak die Erwartungen erfüllt, oder ob es Bereiche gibt, die Nachhilfe benötigen, um den heutigen Anforderungen an IAM-Systeme gerecht zu werden.
+  links:
+    - url: /assets/files/2024-02_EN_Keycloak_durch_die_IAM_Brille_betrachtet_KeycloakDevDay.pdf
+      type: Slides
