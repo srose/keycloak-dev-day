@@ -17,6 +17,9 @@
     The talk will showcase the integration of OPA with Keycloak and cover Keycloak's authentication flows, required actions, service access policies, and OPA's policy definition and enforcement mechanisms.
     Practical examples will demonstrate how to achieve fine-grained, context-aware access control in modern applications.
     Suitable for developers and architects.
+  links:
+    - url: https://github.com/thomasdarimont/keycloak-opa-authz-demo 
+      type: Resources / Slides
 - title: "Unlocking the Power of Keycloak: Best Practices for Extension Development"
   speaker: stj
   room: Chill-out Area
