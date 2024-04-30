@@ -8,6 +8,8 @@
   links:
     - url: https://speakerdeck.com/ahus1/whats-next-in-keycloak-the-open-source-iam-kc24
       type: Slides
+    - url: https://youtu.be/lQH-yNrF_As?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: Flexible Access Management with Keycloak and Open Policy Agent
   speaker: tda
   room: Main Area
@@ -20,6 +22,8 @@
   links:
     - url: https://github.com/thomasdarimont/keycloak-opa-authz-demo 
       type: Resources / Slides
+    - url: https://youtu.be/O0quO2D2d-E?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: "Unlocking the Power of Keycloak: Best Practices for Extension Development"
   speaker: stj
   room: Chill-out Area
@@ -33,6 +37,8 @@
   links:
     - url: https://conciso.de/wp-content/uploads/2024/02/20240222_KeycloakDevDay.pdf
       type: Slides
+    - url: https://youtu.be/1IhcQjdjbsI?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: Automating Keycloak configuration for compliance and agile development
   speaker: sta
   room: Main Area
@@ -46,6 +52,8 @@
   links:
     - url: https://github.com/999eagle/keycloakdevday2024
       type: Resources
+    - url: https://youtu.be/Xqtd8EUxakk?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: Keycloak Extension Develpment with Testcontainers
   speaker: nko
   room: Chill-out Area
@@ -59,6 +67,8 @@
   links:
     - url: https://github.com/dasniko/testcontainers-keycloak
       type: Resources
+    - url: https://youtu.be/l2Lk2Z9mHBs?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: Multi-Tenancy with Keycloak
   speaker: grp
   room: Main Area
@@ -73,6 +83,8 @@
   links:
     - url: https://docs.google.com/presentation/d/1fbrK1wOIo9reYEwesS1sx_N-T4fTIs4NI1BaTuF0sU4/edit?usp=drive_link
       type: Slides
+    - url: https://youtu.be/DNq51wWw3F4?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
 - title: Keycloak durch die Identity Management Brille betrachtet
   speaker: rba
   room: Chill-out Area
@@ -84,3 +96,5 @@
   links:
     - url: /assets/files/2024-02_EN_Keycloak_durch_die_IAM_Brille_betrachtet_KeycloakDevDay.pdf
       type: Slides
+    - url: https://youtu.be/5WjIEj9HLk8?list=PLNn3plN7ZiaqXjiDSB1KDaF3bCDuQmDgw
+      type: Video
