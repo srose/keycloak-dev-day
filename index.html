@@ -6,18 +6,18 @@ reasons:
   - Discover best-practices for operating Keycloak
   - Learn from others using Keycloak
   - Grow your Keycloak related network
-  - Free amazing Keycloak DevDay T-Shirt!
+  - Free amazing Keycloak DevDay gift!
 included:
   - icon: user-tie
-    text: 6+ talks from industry-leading speakers
+    text: Many talks from industry-leading and community speakers
   - icon: people-carry
-    text: Access to 2+ workshops
+    text: Access to workshops (we are currently evaluating a hands-on workshop the day before the event)
   - icon: glass-cheers
-    text: Amazing after-party
+    text: Afterwork-party
   - icon: utensils
-    text: FREE drinks, refreshments, breakfast and lunch
-  - icon: tshirt
-    text: FREE Keycloak DevDay T-Shirt
+    text: FREE drinks, refreshments, coffee, breakfast and lunch
+  - icon: gift
+    text: FREE Keycloak Gift for all participants
 ---
 <!DOCTYPE html>
 <html lang="en"> 
@@ -66,8 +66,12 @@ included:
 		<div class="hero-block-mask"></div>
 		<div class="container">
 			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">Keycloak DevDay 2024</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>22 Feb <i class="fas fa-map-marker-alt mx-2"></i>Frankfurt, Germany <i class="fas fa-clock mx-2"></i>9am - 5pm</div>
+				<h1 class="hero-heading mb-2">Keycloak DevDay 2025</h1>
+				<div class="hero-meta mb-3">
+					<i class="far fa-calendar-alt me-2"></i>March, 6th 
+					<i class="fas fa-map-marker-alt mx-2"></i>Darmstadt, Germany 
+					<!--<i class="fas fa-clock mx-2"></i>9am - 5pm-->
+				</div>
 				<div class="hero-intro mb-4">The Community Class Reunion for <br>Keycloak Developers</div>
 				{% if site.showTicketSale %}
 				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="{{site.pretix}}" target="_blank">Get Tickets</a></div>
@@ -82,7 +86,7 @@ included:
 			<div class="row">
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">100+</div>
+						<div class="number">120+</div>
 						<div class="unit">Attendees</div>
 					</div><!--//item-->
 				</div><!--//col-->
@@ -94,13 +98,13 @@ included:
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">6+</div>
+						<div class="number">Awesome</div>
 						<div class="unit">Talks</div>
 					</div><!--//item-->
 				</div><!--//col-->
 				<div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">2+</div>
+						<div class="number">Hands-on</div>
 						<div class="unit">Workshops</div>
 					</div><!--//item-->
 				</div><!--//col-->
@@ -110,6 +114,9 @@ included:
 
 	{% include about.html %}
 
+	{% include cfp.html %}
+
+	{% comment %}
 	{% include speakers.html %}
 	
 	<div class="container">
@@ -117,17 +124,20 @@ included:
 	</div>
 
 	{% include schedule.html %}
+	{% endcomment %}
 
 	{% include tickets.html %}
 
 	{% include venue.html %}
 
-	{% include sponsors.html %}
+	{% include sponsors-call.html %}
 
 	{% include footer.html %}
 
+	{% comment %}
 	<!-- Modal Speaker -->
 	{% include speaker-modal.html %}
+	{% endcomment %}
 	
 	<!-- Javascript -->          
 	<script src="./assets/plugins/popper.min.js"></script>
