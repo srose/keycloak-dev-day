@@ -1,9 +1,9 @@
-# - name: Conciso GmbH
-#   url: https://www.conciso.de
-#   logo: conciso-logo-corporate.svg
-# - name: intension GmbH
-#   url: https://www.intension.de
-#   logo: intension.png
+- name: Conciso GmbH
+  url: https://www.conciso.de
+  logo: conciso-logo-corporate.svg
+- name: intension GmbH
+  url: https://www.intension.de
+  logo: intension.png
 - name: Niko Köbler - Consult. Develop. Train.
   url: https://www.n-k.de
   logo: nko_signet.png
