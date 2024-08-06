@@ -2,7 +2,7 @@ title: Keycloak DevDay 2025 Germany
 description: Keycloak Developer Community 1-Day-Conference
 url: https://www.keycloak-day.dev
 baseurl: "" # the subpath of your site, e.g. /blog
-pretix: https://pretix.eu/dasniko/keycloak-day-25
+pretix: https://tickets.n-k.de/keycloak-day-25
 showTicketSale: false
 
 # some default values for Front Matter
