@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 855.4 185.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_12-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #111e30;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_8);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_9);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_12);
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_11);
+      }
+
+      .cls-8 {
+        fill: url(#Unbenannter_Verlauf_10);
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-3" d="M66.73,51.39C30,51.39.22,81.17.22,117.9s29.78,66.52,66.52,66.52h66.52v-66.52c0-36.74-29.78-66.52-66.51-66.52h0M108.31,159.48h-41.57c-22.96,0-41.57-18.61-41.57-41.57,0-22.96,18.61-41.57,41.57-41.57s41.57,18.61,41.57,41.57h0v41.57Z"/>
+    </clipPath>
+    <radialGradient id="Unbenannter_Verlauf_12" data-name="Unbenannter Verlauf 12" cx="-253.68" cy="476.28" fx="-253.68" fy="476.28" r=".69" gradientTransform="translate(28554.58 124182.41) rotate(3.26) scale(141.95 -256.66) skewX(.41)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e9a49"/>
+      <stop offset="1" stop-color="#1e9a49" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_8" data-name="Unbenannter Verlauf 8" cx="-253.24" cy="476.19" fx="-253.24" fy="476.19" r=".73" gradientTransform="translate(28213.36 124596.97) rotate(3.37) scale(141.96 -257.39) skewX(.48)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#079cd9"/>
+      <stop offset="1" stop-color="#079cd9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_9" data-name="Unbenannter Verlauf 9" cx="-253.03" cy="476.19" fx="-253.03" fy="476.19" r=".99" gradientTransform="translate(31416.02 59032.33) rotate(4.26) scale(141.97 -118.61) skewX(.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee1453"/>
+      <stop offset="1" stop-color="#ee1453" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_10" data-name="Unbenannter Verlauf 10" cx="-254.95" cy="476.78" fx="-254.95" fy="476.78" r="1.03" gradientTransform="translate(59097.79 496.75) rotate(-50.7) scale(138.99 -96.5) skewX(-1.4)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d60000"/>
+      <stop offset="1" stop-color="#d60000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_11" data-name="Unbenannter Verlauf 11" cx="-254.27" cy="475.47" fx="-254.27" fy="475.47" r=".96" gradientTransform="translate(36138.38 46979.35) rotate(-.06) scale(142 -98.64) skewX(-.02)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f59f1c"/>
+      <stop offset="1" stop-color="#f59f1c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_12-2" data-name="Unbenannter Verlauf 12" cx="-253.85" cy="474.86" fx="-253.85" fy="474.86" r=".69" gradientTransform="translate(36070.5 65332) scale(142 -137)" xlink:href="#Unbenannter_Verlauf_12"/>
+  </defs>
+  <g id="Gruppe_95" data-name="Gruppe 95">
+    <path id="Pfad_10-2" data-name="Pfad 10-2" class="cls-2" d="M248.21,142.83c-13.78,18.37-39.83,22.09-58.2,8.31-18.37-13.78-22.09-39.83-8.31-58.2,13.78-18.37,39.83-22.09,58.2-8.31,3.15,2.36,5.95,5.16,8.31,8.31h28.4c-13.78-34.06-52.55-50.49-86.61-36.72-34.06,13.78-50.49,52.55-36.72,86.61,13.78,34.06,52.55,50.49,86.61,36.72,16.71-6.76,29.96-20.01,36.72-36.72h-28.4Z"/>
+    <path id="Pfad_11-2" data-name="Pfad 11-2" class="cls-2" d="M364.62,51.37h-24.94V1.48h-24.95v49.89h-24.94v24.94h24.94v108.09h24.94v-108.09h24.94v-24.94Z"/>
+    <path id="Pfad_12-2" data-name="Pfad 12-2" class="cls-2" d="M530.91,1.48v116.41c0,22.96-18.61,41.57-41.57,41.57-22.96,0-41.57-18.61-41.57-41.57,0-22.96,18.61-41.57,41.57-41.57h16.63v-24.94h-16.63c-36.74,0-66.52,29.78-66.52,66.52s29.78,66.52,66.52,66.52,66.52-29.78,66.52-66.52h0V1.48h-24.94Z"/>
+    <path id="Pfad_13-2" data-name="Pfad 13-2" class="cls-2" d="M639,51.37c-36.74,0-66.52,29.78-66.52,66.52s29.78,66.52,66.52,66.52c36.74,0,66.52-29.78,66.52-66.52h0c0-36.74-29.78-66.52-66.52-66.52M639,159.46c-22.96,0-41.57-18.61-41.57-41.57s18.61-41.57,41.57-41.57,41.57,18.61,41.57,41.57h0c0,22.96-18.61,41.57-41.57,41.57"/>
+    <path id="Pfad_14-2" data-name="Pfad 14-2" class="cls-2" d="M788.67,51.37c-36.74,0-66.52,29.78-66.52,66.52s29.78,66.52,66.52,66.52,66.52-29.78,66.52-66.52c0-36.74-29.78-66.52-66.52-66.52M788.67,159.46c-22.96,0-41.57-18.61-41.57-41.57s18.61-41.57,41.57-41.57,41.57,18.61,41.57,41.57h0c0,22.96-18.61,41.57-41.57,41.57"/>
+    <rect id="Rechteck_18-2" data-name="Rechteck 18-2" class="cls-2" x="381.25" y="51.37" width="24.94" height="133.04"/>
+    <rect id="Rechteck_19-2" data-name="Rechteck 19-2" class="cls-2" x="381.25" y="1.48" width="24.94" height="24.94"/>
+  </g>
+  <g class="cls-10">
+    <g id="Gruppe_maskieren_1" data-name="Gruppe maskieren 1">
+      <g id="Gruppe_56" data-name="Gruppe 56">
+        <rect id="Rechteck_125" data-name="Rechteck 125" class="cls-9" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_126" data-name="Rechteck 126" class="cls-6" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_127" data-name="Rechteck 127" class="cls-4" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_128" data-name="Rechteck 128" class="cls-5" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_129" data-name="Rechteck 129" class="cls-8" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_132" data-name="Rechteck 132" class="cls-7" x="-5.29" y="48" width="142" height="137"/>
+        <rect id="Rechteck_133" data-name="Rechteck 133" class="cls-1" x="-5.29" y="48" width="142" height="137"/>
+      </g>
+    </g>
+  </g>
+</svg>
