@@ -1,5 +1,14 @@
 ---
 layout: none
+highlights:
+  - number: 1
+    unit: Day
+  - number: 120+
+    unit: Attendees
+  - number: Awesome
+    unit: Talks + Keynote
+  - number: OpenSpace
+    unit: Community
 reasons:
   - Meet maintainers of Keycloak
   - Meet other developers extending Keycloak
@@ -78,41 +87,24 @@ included:
 				{% else %}
 				<div class="hero-cta"><a class="btn btn-secondary btn-lg scrollto" href="#cfp-section" >>>> Call for Papers <<<</a></div>
 				{% endif %}
-			</div><!--//hero-text-block-->
-		</div><!--//container-->
-
-	</div><!--//hero-block-->
+			</div>
+		</div>
+	</div>
 	
 	<div class="stats-block theme-bg-primary text-white py-4 text-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 col-md-3">
+				{% for hl in page.highlights %}
+                <div class="col-6 col-md-3">
 					<div class="item">
-						<div class="number">120+</div>
-						<div class="unit">Attendees</div>
-					</div><!--//item-->
-				</div><!--//col-->
-				<div class="col-6 col-md-3">
-					<div class="item">
-						<div class="number">1</div>
-						<div class="unit">Day</div>
-					</div><!--//item-->
-				</div><!--//col-->
-				<div class="col-6 col-md-3">
-					<div class="item">
-						<div class="number">Awesome</div>
-						<div class="unit">Talks</div>
-					</div><!--//item-->
-				</div><!--//col-->
-				<div class="col-6 col-md-3">
-					<div class="item">
-						<div class="number">Hands-on</div>
-						<div class="unit">Workshops</div>
-					</div><!--//item-->
-				</div><!--//col-->
+						<div class="number">{{hl.number}}</div>
+						<div class="unit">{{hl.unit}}</div>
+					</div>
+				</div>
+                {% endfor %}
 			</div>
-		</div><!--//container-->
-	</div><!--//stats-block-->
+		</div>
+	</div>
 
 	{% include about.html %}
 
