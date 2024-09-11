@@ -110,13 +110,13 @@ included:
 
 	{% include cfp.html %}
 
-	{% comment %}
 	{% include speakers.html %}
 	
 	<div class="container">
 		<hr>
 	</div>
 
+	{% comment %}
 	{% include schedule.html %}
 	{% endcomment %}
 
@@ -128,10 +128,9 @@ included:
 
 	{% include footer.html %}
 
-	{% comment %}
 	<!-- Modal Speaker -->
 	{% include speaker-modal.html %}
-	{% endcomment %}
+	{% include talk-modal.html %}
 	
 	<!-- Javascript -->          
 	<script src="./assets/plugins/popper.min.js"></script>

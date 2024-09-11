@@ -1,0 +1,26 @@
+{% for talk in site.data.talks %}
+<div class="modal modal-speaker modal-talk-{{talk.speaker}}" id="modal-talk-{{talk.speaker}}" tabindex="-1" role="dialog" aria-labelledby="talk-{{talk.speaker}}-ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="talk-{{talk.speaker}}-ModalLabel" class="modal-title sr-only">{{talk.title}}</h4>
+            </div>
+            <div class="modal-body p-0">
+                <div class="theme-bg-light p-5">
+                    <div class="row">
+                        <div class="col text-center text-md-start mx-auto">
+                            <h2 class="name mb-2">{{talk.title}}</h2>
+                            {% assign speaker = site.data.speakers | where: "key", talk.speaker | first %}
+                            <div class="meta">{{speaker.name}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc p-4 p-lg-5">
+                    <p>{{talk.abstract}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

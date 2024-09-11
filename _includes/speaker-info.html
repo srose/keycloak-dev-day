@@ -1,4 +1,5 @@
-{% for spk in site.data.speakers %}
+{% assign speakers = site.data.speakers | sort: "name" %}
+{% for spk in speakers %}
 <div class="col-6 col-lg-3 mb-4">
     <div class="card rounded-0">
         <a href="#modal-speaker-{{spk.key}}" data-bs-toggle="modal" data-bs-target="#modal-speaker-{{spk.key}}"><img src="./assets/images/speakers/{{spk.img}}" class="card-img-top rounded-0" alt="{{spk.name}}"></a>
@@ -8,7 +9,14 @@
                 <div class="meta">{{spk.title}}</div>
                 <div class="meta">{{spk.company}}</div>
             </div><!--//card-text-->
-            <a href="#modal-speaker-{{spk.key}}" data-bs-toggle="modal" data-bs-target="#modal-speaker-{{spk.key}}">Read more &rarr;</a>
+            <div class="mb-3">
+                <a href="#modal-speaker-{{spk.key}}" data-bs-toggle="modal" data-bs-target="#modal-speaker-{{spk.key}}">Read more &rarr;</a>
+            </div>
+            <div>
+                Talk:<br/>
+                {% assign talk = site.data.talks | where: "speaker", spk.key | first %}
+                <a href="#modal-talk-{{spk.key}}" data-bs-toggle="modal" data-bs-target="#modal-talk-{{spk.key}}">{{talk.title}}</a>
+            </div>
         </div><!--//card-->
         <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
