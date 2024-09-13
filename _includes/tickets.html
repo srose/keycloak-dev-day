@@ -1,6 +1,7 @@
 <section id="tickets-section" class="tickets-section section theme-bg-light">
     <div class="container">
         <h3 class="section-heading text-center mb-3">Tickets</h3>
+        <div class="text-center text-danger fw-bold">10% EarlyBird discount until September, 30th!</div>
         {% if site.showTicketSale %}
         <div class="section-intro single-col-max mx-auto text-center mb-4">Please buy your ticket through our <a href="{{site.pretix}}" target="_blank">Pretix ticket shop</a>:</div>
         <div class="row pricing mb-5">
@@ -14,7 +15,7 @@
             </noscript>
         </div>
         {% else %}
-        <div class="section-intro single-col-max mx-auto text-center mb-4">Ticket sale starts at September, 16th 2024.<br/>10% EarlyBird discount until September, 30th!</div>
+        <div class="section-intro single-col-max mx-auto text-center mb-4">Ticket sale starts on September 16, 2024.</div>
         {% endif %}
         
         <div class="offers text-center bg-white p-4 p-lg-5">
