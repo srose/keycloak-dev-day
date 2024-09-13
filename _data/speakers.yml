@@ -88,6 +88,10 @@
       icon: linkedin-in
     - url: https://github.com/mabartos
       icon: github
+- key: dummy
+  img: dummy.png
+  name: Maybe you? 🫵
+  title: As the call-for-papers is still open, we will publish more talks in the next weeks... submit your proposal now!
 # - key: tda
 #   img: td.jpg
 #   name: Thomas Darimont
@@ -102,22 +106,6 @@
 #     Thomas Darimont is a Principal Consultant at codecentric AG in Germany. As a digital identity specialist, he helps customers design, implement, and integrate identity platforms based on open-source technologies.
 #     <p>Thomas has been involved with the Keycloak project for over nine years and was the first maintainer outside of Red Hat.</p>
 #     <p>In his spare time, he loves fostering the local tech community in Saarland by organizing and speaking at tech meetups and contributing to open-source projects.</p>
-# - key: nko
-#   img: nko.jpg
-#   name: Niko Köbler
-#   title: Keycloak Expert
-#   company: keycloak-experte.de
-#   social:
-#     - url: https://www.linkedin.com/in/nkoebler
-#       icon: linkedin-in
-#     - url: https://github.com/dasniko
-#       icon: github
-#     - url: https://www.youtube.com/@dasniko
-#       icon: youtube
-#   bio: |
-#     Niko works as a freelancer, is known as "Mr. KEYCLOAK" for over 9 years and works as an IAM expert for customers from various industries throughout Europe.
-#     He is running a successful KEYCLOAK channel on YouTube since the beginning of 2021 and supports the community in various forums.
-#     <p>He is also a well-known and sought-after speaker at IT conferences, co-lead of JUG Darmstadt and writes articles for various tech journals and online magazines.</p>
 # - key: sta
 #   img: sta.jpeg
 #   name: Sophie Tauchert
