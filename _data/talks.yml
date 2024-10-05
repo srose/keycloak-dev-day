@@ -1,8 +1,13 @@
-- title: "Keynote"
+- title: "Keynote: How to benefit from the latest Keycloak features"
   speaker: ahus1
   room: Berlin
   abstract: |
-    t.b.d.
+    Keycloak delivers multiple updates every year. To benefit from new features, and to stay up to date with the latest security fixes, you need to upgrade.
+    At the same time an upgrade might bring breaking changes and can lead to downtimes. So how should you approach this?
+    <br/><br/>In this talk you'll learn how to upgrade with confidence in a timely manner and with less effort.
+    <br/><br/>After a short recap of the latest Keycloak features, this talk shows how to navigate the release schedule of Keycloak and explains how preview and deprecated features work.
+    It also shows how to prepare for the next upgrade using the resources provided by the Keycloak project, and what additional measures you should take in your deployment and test pipelines to smoothen the upgrade process.
+    Finally, it will detail how you provide feedback to the Keycloak project ahead of an upcoming release.
 - title: "Mastering Access Control: Low-Code Authorization with ReBAC, Decoupling Patterns and Policy as Code"
   speaker: embesozzi
   abstract: |
