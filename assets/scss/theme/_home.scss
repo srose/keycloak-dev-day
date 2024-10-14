@@ -656,7 +656,11 @@
 	
  }
 
-
-
-
-
+.bd-placeholder-img {
+	height: 300px;
+	width: 100%;
+}
+@media (max-width: 999.99px) {.bd-placeholder-img {height: 400px;}}
+@media (max-width: 772.99px) {.bd-placeholder-img {height: 460px;}}
+@media (max-width: 575.99px) {.bd-placeholder-img {height: 520px;}}
+@media (max-width: 456.99px) {.bd-placeholder-img {height: 600px;}}
