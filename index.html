@@ -116,7 +116,11 @@ included:
 	{% endif %}
 
 	{% include speakers.html %}
-	
+
+	{% if site.showPreConfEvent %}
+	{% include pre-conf-event.html %}
+	{% endif %}
+
 	<div class="container">
 		<hr>
 	</div>
